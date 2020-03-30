@@ -1,0 +1,58 @@
+.mainSection {
+   z-index: 1;
+   padding: 80px 0 80px 0;
+   min-height: 700px;
+   background: url("../Image/fonPhoto-01.jpg") center/100% 100% no-repeat;
+}
+.row {
+   height: 250px;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+}
+.exmplImage {
+   width: 250px;
+   height: 150px;
+   transition-duration: 1s;
+}
+.otherImage {
+   width: 150px;
+   height: 200px;
+}
+.row img:hover {
+   cursor: zoom-in;
+   border: 5px solid gold;
+   transform: translateY(10px);
+}
+.mainSectionBig {
+   display: none;
+   width: 100%;
+   position: fixed;
+   top: 10px;
+   z-index: 2;
+   overflow-x: hidden;
+   background-color: rgba(0,0,0,.8); 
+}
+.mainSectionBigImg {
+   display: block;
+   margin: 0 auto;
+   width: auto;
+   height: 500px;
+}
+.closeBtnContainer {
+   height: 40px;
+   text-align: right;
+}
+.closeBtn {
+   position: fixed;
+   top: 10px;
+   right: 20px;
+   font-size: 30px;
+   color: wheat;
+   transition: .5s;
+}
+.closeBtn:hover {
+   cursor: pointer;
+   color: gold;
+}
+
